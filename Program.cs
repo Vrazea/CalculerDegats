@@ -15,8 +15,24 @@
  */
 class Program
 {
+    public static int weaponPower;
+    public static int bonusDmg;
+    public static int Damage;
+    public static void CalculateWeaponDamage()
+    { 
+        weaponPower = 40; 
+        bonusDmg = 15;
+        Damage = weaponPower + bonusDmg;
+        
+    }
+    
+    
+    
+    
+    
     static void Main(string[] args)
     {
-        
+        CalculateWeaponDamage();
+        Console.WriteLine(Damage + " Dégats infligés");
     }
 }
